@@ -1,7 +1,7 @@
 function getChildren1(parent) {
     console.log(parent.nodeType!=3?parent.nodeName:parent.nodeValue);
     var children=parent.childNodes;
-    for(var i=0;i<children.length;i++){
+    for(var i=0,len=children.length;i<len;i++){
         // console.log(child.nodeType!=3?child.nodeName:child.nodeValue);
         getChildren1(children[i]);
     }
