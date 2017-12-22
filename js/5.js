@@ -19,7 +19,7 @@ function move() {
             selCts=[];
             break;
         case '&gt;':
-            var opts=unsel.getElementsByTagName('option');
+            var opts=unsel.getElementsByTagName('op  tion');
             for(var i=opts.length-1;i>=0;i--){
                 if(opts[i].selected)
                     selCts.push(unselCts.splice(i,1)[0]);
